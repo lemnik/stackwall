@@ -52,3 +52,12 @@ java.lang.StackOverflowError
 
 Stackwall should be able to read most `StackOverflowError` traces (plain, ADB logs, etc), if you find a variant that
 isn't understood, please open a Pull Request or log an Issue and be sure to include a test and full example.
+
+## TODO
+Stackwall is still in a very early phase of development, these are major outstanding issues that need to be addressed:
+
+1. build / test / release process
+1. an index of platform methods to count against
+1. verify and improve the accuracy of the output (currently it's a best-guess)
+1. command-line options
+1. more test coverage
