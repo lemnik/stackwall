@@ -51,7 +51,15 @@ fun main(args: Array<String>) {
         } catch (ex: NoSuchMethodException) {
             println("<no-such-method>")
         }
+
+        // add a word to each counter for the return-address
+        low++
+        high++
     }
+
+    // subtract a single word from each counter (since the last frame doesn't have a return address)
+    low--
+    high--
 
     println("Total Range: $low..$high (${low * 4}b..${high * 4}b)")
 }
