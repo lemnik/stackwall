@@ -5,8 +5,12 @@ are using the most stack space.
 
 ### Getting Started
 
-1. Download a release
-1. Unpack the archive file
+You will need a Java11 or higher JVM to run Stackwall. Stackwall currently has no releases, so you'll need to build it
+yourself. This situation will hopefully improve soon.
+
+1. Clone the repository
+1. `./gradlew assemble`
+1. Unpack the archive file in `build/distributions`
 1. Run `./bin/stackwall <application.apk> <stackoverflow.txt>`
 
 StackOverflow files are simply plain text files containing the stack-trace of the `StackOverflowError` your are looking

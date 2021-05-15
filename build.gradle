@@ -5,7 +5,7 @@ plugins {
 }
 
 group 'com.lemnik.stackwall'
-version '1.0-SNAPSHOT'
+version '0.1'
 
 repositories {
     mavenCentral()
@@ -13,6 +13,11 @@ repositories {
 
 application {
     mainClass = "com.lemnik.stackwall.MainKt"
+}
+
+kotlin {
+    sourceCompatibility = JavaVersion.VERSION_11
+    targetCompatibility = JavaVersion.VERSION_11
 }
 
 dependencies {
